@@ -15,7 +15,7 @@
 	"nodes":[
 		{
 			"mesh":0,
-			"name":"BSSS Floor 2",
+			"name":"Model.003guhwireframe all good!!!",
 			"rotation":[
 				0,
 				0.7071066498756409,
@@ -28,7 +28,7 @@
 				0.537083089351654
 			],
 			"translation":[
-				-159.53330993652344,
+				46.596866607666016,
 				0.1483159065246582,
 				-56.84346008300781
 			]
@@ -71,93 +71,93 @@
 		{
 			"bufferView":0,
 			"componentType":5126,
-			"count":10312,
+			"count":15875,
 			"max":[
-				209.57931518554688,
-				11.972894668579102,
-				466.958740234375
+				214.69775390625,
+				23.945690155029297,
+				83.16307830810547
 			],
 			"min":[
-				-374.2417297363281,
-				-3.582269130220084e-07,
-				127.1143798828125
+				-369.50616455078125,
+				-0.08874223381280899,
+				-256.6813049316406
 			],
 			"type":"VEC3"
 		},
 		{
 			"bufferView":1,
 			"componentType":5126,
-			"count":10312,
+			"count":15875,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":2,
 			"componentType":5126,
-			"count":10312,
+			"count":15875,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":3,
 			"componentType":5121,
-			"count":10312,
+			"count":15875,
 			"normalized":true,
 			"type":"VEC4"
 		},
 		{
 			"bufferView":4,
 			"componentType":5123,
-			"count":10312,
+			"count":15875,
 			"normalized":true,
 			"type":"VEC4"
 		},
 		{
 			"bufferView":5,
 			"componentType":5123,
-			"count":23757,
+			"count":35967,
 			"type":"SCALAR"
 		}
 	],
 	"bufferViews":[
 		{
 			"buffer":0,
-			"byteLength":123744,
+			"byteLength":190500,
 			"byteOffset":0,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":123744,
-			"byteOffset":123744,
+			"byteLength":190500,
+			"byteOffset":190500,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":82496,
-			"byteOffset":247488,
+			"byteLength":127000,
+			"byteOffset":381000,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":41248,
-			"byteOffset":329984,
+			"byteLength":63500,
+			"byteOffset":508000,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":82496,
-			"byteOffset":371232,
+			"byteLength":127000,
+			"byteOffset":571500,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":47514,
-			"byteOffset":453728,
+			"byteLength":71934,
+			"byteOffset":698500,
 			"target":34963
 		}
 	],
 	"buffers":[
 		{
-			"byteLength":501244,
+			"byteLength":770436,
 			"uri":"scene.bin"
 		}
 	]
