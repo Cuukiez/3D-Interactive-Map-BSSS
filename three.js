@@ -149,9 +149,10 @@ function animate() {
 }
 
 function onFloor1() {
+    
     if (objToLoad == 'Floor1'){
-        
-    } else{
+
+    }else{
         objToLoad = 'Floor1';
                 
         controls.target.set(0,0,0);
@@ -167,10 +168,10 @@ function onFloor1() {
 }
 
 function onFloor2() {
-    if (objToLoad == 'Floor2'){
-        
-    }else{
 
+    if (objToLoad == 'Floor2'){
+
+    }else{
         objToLoad = 'Floor2';
 
         load();
@@ -182,7 +183,9 @@ function onFloor2() {
 
         console.log(objToLoad);
     }
+    
 }
+
 
 //* Start
 
