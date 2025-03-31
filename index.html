@@ -3,10 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Burnaby South Secondary Interactive Map</title>
-		<style>
-			body { margin: 0;
-				background-color: #272727;}
-		</style>
+		<link rel="stylesheet" href="styles.css">
 		<script type="importmap">
 			{
 			  "imports": {
@@ -16,19 +13,14 @@
 			}
 			</script>
 	</head>
+	
 	<body>
 
 		<script type="module" src="./three.js"></script>
 
-		<button id="zoom-in">
-		Floor 1
-		</button>
-		<button id="zoom-out">
-		Floor 2
-		</button>
-
-		<main>
-			<div id="container3D"></div>
-		</main>
+		<div id="container3D" class="threejs">
+			<button id="zoom-in" class='float1'>F1</button>
+			<button id="zoom-out" class='float2'>F2</button>
+		</div>
 	</body>
 </html>
