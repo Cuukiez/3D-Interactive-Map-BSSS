@@ -32,7 +32,6 @@ const loader = new GLTFLoader();
 //* Components
 
 camera.position.set(0, 250, 200);
-//camera.position.y = 250;
 
 topLight.position.set(200, 700, 200);
 topLight.castShadow = true;
