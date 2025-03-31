@@ -74,6 +74,7 @@ window.addEventListener("resize", function(){
     renderer.setSize(window.innerWidth, window.innerHeight);
 });
 
+/*
 window.addEventListener("mousedown", event =>{
     if(event.button == 2){
         scene.remove(object);
@@ -111,6 +112,7 @@ window.addEventListener("mousedown", event =>{
         scene.remove(object);
     }
 })
+*/
 
 zoomIn.addEventListener( 'click', onFloor1, false );
 zoomOut.addEventListener( 'click', onFloor2, false );
@@ -162,12 +164,12 @@ function onFloor2() {
 
     load();
 
-    scene.remove(objToLoad);
+    scene.remove(object);
 
     controls.target.set(0,30,20);
     camera.position.set(0, 250, 200);
 
-
+    console.log(objToLoad);
 }
 
 //* Start
