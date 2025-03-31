@@ -18,7 +18,8 @@ let objToLoad = 'Floor1'
 
 let controls = new MapControls( camera, renderer.domElement );
 
-const topLight = new THREE.DirectionalLight(0xffffff, objToLoad == 'snorlax' ? 0 : 5);
+const topLight = new THREE.DirectionalLight(0xffffff, 4);
+const sideLight = new THREE.DirectionalLight(0xffffff, 2);
 const ambientLight = new THREE.AmbientLight(0xffffff, 2);
 
 const gridHelper = new THREE.GridHelper(350, 50);
@@ -33,8 +34,10 @@ const loader = new GLTFLoader();
 
 camera.position.set(0, 250, 200);
 
-topLight.position.set(200, 700, 200);
+topLight.position.set(camera.position.x, camera.position.y, camera.position.z);
 topLight.castShadow = true;
+
+sideLight.position.set(0, 250, 0);
 
 gridHelper.position.y = -1;
 gridHelper.position.x = 1
@@ -46,6 +49,7 @@ document.getElementById('container3D').appendChild(renderer.domElement);
 scene.add(
     ambientLight,
     topLight,
+    sideLight,
     gridHelper,
 );
 
@@ -138,6 +142,8 @@ function load() {
 function animate() {
     requestAnimationFrame(animate);
     controls.update();
+
+    topLight.position.set(camera.position.x, camera.position.y, camera.position.z);
 
     renderer.render(scene, camera);
 }
