@@ -3,7 +3,6 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { MapControls } from 'three/addons/controls/MapControls.js';
-import { pass } from 'three/tsl';
 
 
 //* Initialization
@@ -152,7 +151,7 @@ function animate() {
 function onFloor1() {
 
     if (objToLoad == 'Floor1'){
-        console.log('onFloor1');
+        
     } else{
         objToLoad = 'Floor1';
 
@@ -171,7 +170,7 @@ function onFloor1() {
 function onFloor2() {
 
     if (objToLoad == 'Floor2'){
-        console.log('onFloor2');
+        
     }else{
         objToLoad = 'Floor2';
 
