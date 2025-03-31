@@ -107,6 +107,8 @@ window.addEventListener("mousedown", event =>{
             load();
             console.log(objToLoad);
         }
+    }else{
+        scene.remove(object);
     }
 })
 
