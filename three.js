@@ -149,12 +149,11 @@ function animate() {
 }
 
 function onFloor1() {
-
     if (objToLoad == 'Floor1'){
         
     } else{
         objToLoad = 'Floor1';
-
+                
         controls.target.set(0,0,0);
         camera.position.set(0, 250, 200);
 
@@ -168,22 +167,21 @@ function onFloor1() {
 }
 
 function onFloor2() {
-
     if (objToLoad == 'Floor2'){
         
     }else{
+
         objToLoad = 'Floor2';
 
         load();
-    
+
         scene.remove(object);
-    
+
         controls.target.set(0,30,20);
         camera.position.set(0, 250, 200);
-    
+
         console.log(objToLoad);
     }
-	
 }
 
 //* Start
