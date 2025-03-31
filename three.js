@@ -3,6 +3,7 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { MapControls } from 'three/addons/controls/MapControls.js';
+import { pass } from 'three/tsl';
 
 
 //* Initialization
@@ -150,31 +151,40 @@ function animate() {
 
 function onFloor1() {
 
-	objToLoad = 'Floor1';
-            
-    controls.target.set(0,0,0);
-    camera.position.set(0, 250, 200);
+    if (objToLoad == 'Floor1'){
+        console.log('onFloor1');
+    } else{
+        objToLoad = 'Floor1';
 
-    load();
+        controls.target.set(0,0,0);
+        camera.position.set(0, 250, 200);
 
-    scene.remove(object);
+        load();
 
-    console.log(objToLoad);
+        scene.remove(object);
+
+        console.log(objToLoad);
+    }
 
 }
 
 function onFloor2() {
 
-	objToLoad = 'Floor2';
+    if (objToLoad == 'Floor2'){
+        console.log('onFloor2');
+    }else{
+        objToLoad = 'Floor2';
 
-    load();
-
-    scene.remove(object);
-
-    controls.target.set(0,30,20);
-    camera.position.set(0, 250, 200);
-
-    console.log(objToLoad);
+        load();
+    
+        scene.remove(object);
+    
+        controls.target.set(0,30,20);
+        camera.position.set(0, 250, 200);
+    
+        console.log(objToLoad);
+    }
+	
 }
 
 //* Start
